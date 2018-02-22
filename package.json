@@ -1,13 +1,15 @@
 {
-  "name": "js-challenges",
-  "version": "0.0.1",
-	"author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
-  "main": "src/challenges.js",
-  "license": "MIT",
-	"scripts": {
-		"test": "ava"
-	},
-  "devDependencies": {
-    "ava": "^0.25.0"
-  }
+ "name": "js-challenges",
+ "version": "0.0.2",
+ "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
+ "main": "src/challenges.js",
+ "license": "MIT",
+ "scripts": {
+  "test": "ava",
+  "generate": "./generate-tests.js"
+ },
+ "devDependencies": {
+  "ava": "^0.25.0",
+  "mkdirp": "^0.5.1"
+ }
 }
