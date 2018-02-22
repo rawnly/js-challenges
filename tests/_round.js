@@ -1,8 +1,10 @@
 const test = require('ava');
 const {round} = require('..');
+const solutions = require('../src/solutions')
 
 test('ROUND', t => {
-	var output = round(Math.PI, 2);
+	var argument = 'hello';
+	var output = round.apply(this, argument);
 
-	return t.deepEqual(output, 3.14);
+	return t.deepEqual(output, solutions.round.apply(this, argument));
 })
