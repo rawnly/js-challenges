@@ -19,14 +19,14 @@
 ---
 ## Participating
 1. Clone this repo
-2. Install all dependecies via `npm install`.
+2. Install all dependencies via `npm install`.
 3. Fill all challenges in `./src/challenges.js`.
 4. Test them via `npm run test`.
 5. Some ideas? Submit a **PR** or open an **ISSUE**!
 
 ## Contributing
 1. Clone this repo.
-2. Install all dependecies via `npm install`.
+2. Install all dependencies via `npm install`.
 3. Write down your challenge (with solution) in `./src/challenges.js`.
 4. Write a test for your challenge in `./test/_your-challenge.js`.
 5. Import your test in the `test.js` file.
