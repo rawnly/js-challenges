@@ -17,7 +17,7 @@
 
 
 ---
-## Partecipating
+## Participating
 1. Clone this repo
 2. Install all dependecies via `npm install`.
 3. Fill all challenges in `./src/challenges.js`.
