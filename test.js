@@ -1,4 +1,13 @@
-require('./tests/_array-merge');
-require('./tests/_array-sum');
-require('./tests/_object-for-each');
 require('./tests/_round');
+require('./tests/_arrayMerge');
+require('./tests/_arraySum');
+require('./tests/_objectForEach');
+require('./tests/_reverseString');
+require('./tests/_isPalindrome');
+require('./tests/_isMultipleOf');
+require('./tests/_longestWord');
+require('./tests/_capitalize');
+require('./tests/_vowelCount');
+require('./tests/_maxChar');
+require('./tests/_fizzBuzz');
+require('./tests/_SimpleAdding');
