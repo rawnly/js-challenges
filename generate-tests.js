@@ -19,9 +19,9 @@ const solutions = require('../src/solutions')
 
 test('${testName}', t => {
 	var argument = 'hello';
-	var output = ${funcname}.apply(this, argument);
+	var output = ${funcname}(this, argument);
 
-	return t.deepEqual(output, solutions.${funcname}.apply(this, argument));
+	return t.deepEqual(output, solutions.${funcname}(this, argument));
 })`
 
 	var testPath = path.join(__dirname, 'tests', `_${funcname}.js`);
