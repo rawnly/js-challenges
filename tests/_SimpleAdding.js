@@ -4,7 +4,7 @@ const solutions = require('../src/solutions')
 
 test('SIMPLE ADDING', t => {
 	var argument = 3;
-	var output = SimpleAdding.apply(this, argument);
+	var output = SimpleAdding(argument);
 
-	return t.deepEqual(output, solutions.SimpleAdding.apply(this, argument));
+	return t.deepEqual(output, solutions.SimpleAdding(argument));
 })

@@ -4,7 +4,7 @@ const solutions = require('../src/solutions')
 
 test('CAPITALIZE', t => {
 	var argument = 'hello';
-	var output = capitalize.apply(this, argument);
+	var output = capitalize(argument);
 
-	return t.deepEqual(output, solutions.capitalize.apply(this, argument));
+	return t.deepEqual(output, solutions.capitalize(argument));
 })
