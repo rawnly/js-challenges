@@ -4,7 +4,7 @@ const solutions = require('../src/solutions')
 
 test('IS MULTIPLE', t => {
 	var argument = [2, 2];
-	var output = isMultipleOf.apply(this, argument);
+	var output = isMultipleOf(argument);
 
-	return t.deepEqual(output, solutions.isMultipleOf.apply(this, argument));
+	return t.deepEqual(output, solutions.isMultipleOf(argument));
 })

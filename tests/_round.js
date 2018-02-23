@@ -4,7 +4,7 @@ const solutions = require('../src/solutions')
 
 test('ROUND', t => {
 	var argument = 'hello';
-	var output = round.apply(this, argument);
+	var output = round(argument);
 
-	return t.deepEqual(output, solutions.round.apply(this, argument));
+	return t.deepEqual(output, solutions.round(argument));
 })

@@ -4,7 +4,7 @@ const solutions = require('../src/solutions')
 
 test('REVERSE STRING', t => {
 	var argument = 'hello';
-	var output = reverseString.apply(this, argument);
+	var output = reverseString(argument);
 
-	return t.deepEqual(output, solutions.reverseString.apply(this, argument));
+	return t.deepEqual(output, solutions.reverseString(argument));
 })
