@@ -3,7 +3,7 @@ const {round} = require('..');
 const solutions = require('../src/solutions')
 
 test('ROUND', t => {
-	var argument = 'hello';
+	var argument = Math.PI;
 	var output = round(argument);
 
 	return t.deepEqual(output, solutions.round(argument));
