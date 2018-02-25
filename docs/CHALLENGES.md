@@ -39,3 +39,9 @@ Below all the available challenges.
 
 #### 13. SIMPLE ADDING
 > Write a function that sums all numbers from 0 to the given number.
+
+#### 14. ARRAY TO TREE
+> Transform an array into a tree like object.
+
+#### 15. ALPHABETICALLY SORT
+> Write a function that can be used into an Array.sort() for sorting items alphabetically.
