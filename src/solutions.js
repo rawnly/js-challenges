@@ -14,7 +14,7 @@
  * 
  * @returns {Number} Rounded number
  */
-module.exports.round = function(n, places = 0) {
+module.exports.round = function (n, places = 0) {
 	places = Math.pow(10, places)
 
 	return Math.floor(n * places) / places;
@@ -36,7 +36,7 @@ module.exports.round = function(n, places = 0) {
  * 
  * @returns {Array} Returns the merge of all arrays
  */
-module.exports.arrayMerge = function(...arr) {
+module.exports.arrayMerge = function (...arr) {
 	return arr.reduce((a, b) => [...a, ...b]);
 }
 
@@ -57,8 +57,8 @@ module.exports.arrayMerge = function(...arr) {
  * 
  * @return {Number} The sum of all items in the array
  */
-module.exports.arraySum = function(arr) {
-	return arr.reduce((a,b) => a+b);
+module.exports.arraySum = function (arr) {
+	return arr.reduce((a, b) => a + b);
 }
 
 
@@ -78,7 +78,7 @@ module.exports.arraySum = function(arr) {
  * 
  * @returns {Object} The start object
  */
-module.exports.objectForEach = function(obj, callback) {
+module.exports.objectForEach = function (obj, callback) {
 	Object.keys(obj).forEach(key => callback(key, obj[key]));
 
 	return obj;
@@ -100,7 +100,7 @@ module.exports.objectForEach = function(obj, callback) {
  * 
  * @returns {String} String reversed.
  */
-module.exports.reverseString = function(str) {
+module.exports.reverseString = function (str) {
 	return str.split('').reverse().join('')
 }
 
@@ -120,7 +120,7 @@ module.exports.reverseString = function(str) {
  * 
  * @returns {Boolean} Return true if is a palindrome.
  */
-module.exports.isPalindrome = function(str) {
+module.exports.isPalindrome = function (str) {
 	return str.split('').reverse().join('') === str;
 }
 
@@ -141,7 +141,7 @@ module.exports.isPalindrome = function(str) {
  * 
  * @returns {Boolean} If `a` is multiple of `b` returns true
  */
-module.exports.isMultipleOf = function(a, b) {
+module.exports.isMultipleOf = function (a, b) {
 	return a % b === 0;
 }
 
@@ -161,7 +161,7 @@ module.exports.isMultipleOf = function(a, b) {
  * 
  * @returns {String} Returns the longest word of `str`
  */
-module.exports.longestWord = function(str) {
+module.exports.longestWord = function (str) {
 	var words = str.trim().replace(/\W/g, ' ').trim().split(/\s+/);
 
 	words = words.sort((a, b) => {
@@ -187,7 +187,7 @@ module.exports.longestWord = function(str) {
  * 
  * @returns {String} Returns a capitalized string
  */
-module.exports.capitalize = function(str) {
+module.exports.capitalize = function (str) {
 	var words = str.trim().split(/\s+/g)
 	return words.map(word => {
 		return word[0].toUpperCase() + word.substr(1, word.length)
@@ -211,7 +211,7 @@ module.exports.capitalize = function(str) {
  * 
  * @returns {Number} Returns number of vowels in `str`
  */
-module.exports.vowelCount = function(str) {
+module.exports.vowelCount = function (str) {
 	let isVowel = /[aAeEiIoOuU]/g
 	return str.split('').filter(letter => {
 		return isVowel.test(letter)
@@ -235,15 +235,15 @@ module.exports.vowelCount = function(str) {
  * 
  * @returns {Number} Returns character most used in the string.
  */
-module.exports.maxChar = function(str) {
+module.exports.maxChar = function (str) {
 	let charMap = {};
 	let charCount = 0;
 	let charMostUsed = '';
 
-	for(var i=0; i<str.split('').length; i++) {
+	for (var i = 0; i < str.split('').length; i++) {
 		var letter = str.split('')[i];
 
-		if ( charMap[letter] ) {
+		if (charMap[letter]) {
 			charMap[letter]++
 		} else {
 			charMap[letter] = 1
@@ -251,7 +251,7 @@ module.exports.maxChar = function(str) {
 	}
 
 	for (char in charMap) {
-		if ( charMap[char] > charCount ) {
+		if (charMap[char] > charCount) {
 			charCount = charMap[char]
 			charMostUsed = char;
 		}
@@ -281,20 +281,24 @@ module.exports.maxChar = function(str) {
  * 
  * @returns {Array} Returns an array of numbers
  */
-module.exports.fizzBuzz = function({n1 = 3, n2 = 5, max = 100} = {}) {
+module.exports.fizzBuzz = function ({
+	n1 = 3,
+	n2 = 5,
+	max = 100
+} = {}) {
 	var numbers = [];
-	for(let i=0; i<=max; i++) {
+	for (let i = 0; i <= max; i++) {
 		let char = '';
 
-		if ( i % n1 === 0 ) {
+		if (i % n1 === 0) {
 			char += 'Foo';
 		}
 
-		if ( i % n2 === 0 ) {
+		if (i % n2 === 0) {
 			char += 'Bar';
 		}
 
-		numbers.push( char || i );
+		numbers.push(char || i);
 	}
 
 	return numbers
@@ -316,18 +320,18 @@ module.exports.fizzBuzz = function({n1 = 3, n2 = 5, max = 100} = {}) {
  * 
  * @returns {Number} Returns sum of all numbers from 0 to `counter`
  */
-module.exports.simpleAdding = function(num) {
-  var numbers = [];
+module.exports.simpleAdding = function (num) {
+	var numbers = [];
 
 	num = Math.abs(num)
 
-	if ( num === 1 ) return 1;
+	if (num === 1) return 1;
 
-  for(var i=0; i<=num; i++) {
-    numbers.push(i)
-  }
+	for (var i = 0; i <= num; i++) {
+		numbers.push(i)
+	}
 
-  return numbers.reduce((a, b) => a+b);
+	return numbers.reduce((a, b) => a + b);
 }
 
 
@@ -348,26 +352,34 @@ module.exports.simpleAdding = function(num) {
  * @returns {Array} Returns the tree generated from `paths`
  */
 module.exports.arrayToTree = function (...paths) {
-    var result = [], tmp = { result }
+	var result = [],
+		tmp = {
+			result
+		}
 
-    paths.forEach(function (path) {
-        path.reduce(function (r, name, i) {
-            if (!r[name]) {
-                var o = { name }, children = []
+	paths.forEach(function (path) {
+		path.reduce(function (r, name, i) {
+			if (!r[name]) {
+				var o = {
+						name
+					},
+					children = []
 
-                r[name] = { result: children }
+				r[name] = {
+					result: children
+				}
 
-                if (path[i + 1]) {
-                    o.children = children
-                }
+				if (path[i + 1]) {
+					o.children = children
+				}
 
-                r.result.push(o)
-            }
-            return r[name]
-        }, tmp)
-    })
+				r.result.push(o)
+			}
+			return r[name]
+		}, tmp)
+	})
 
-    return result;
+	return result;
 }
 
 
@@ -388,6 +400,6 @@ module.exports.arrayToTree = function (...paths) {
  * 
  * @returns {Boolean}
  */
-module.exports.alphabeticallySort = function(a, b) {
-    return a.localeCompare(b) 
+module.exports.alphabeticallySort = function (a, b) {
+	return a.localeCompare(b)
 }

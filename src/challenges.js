@@ -14,7 +14,7 @@
  * 
  * @returns {Number} Rounded number
  */
-module.exports.round = function(n, places = 0) {}
+module.exports.round = function (n, places = 0) {}
 
 
 /**
@@ -32,7 +32,7 @@ module.exports.round = function(n, places = 0) {}
  * 
  * @returns {Array} Returns the merge of all arrays
  */
-module.exports.arrayMerge = function(...arr) {}
+module.exports.arrayMerge = function (...arr) {}
 
 
 /**
@@ -51,7 +51,7 @@ module.exports.arrayMerge = function(...arr) {}
  * 
  * @return {Number} The sum of all items in the array
  */
-module.exports.arraySum = function(arr) {}
+module.exports.arraySum = function (arr) {}
 
 
 /**
@@ -70,7 +70,7 @@ module.exports.arraySum = function(arr) {}
  * 
  * @returns {Object} The start object
  */
-module.exports.objectForEach = function(obj, callback) {}
+module.exports.objectForEach = function (obj, callback) {}
 
 
 /**
@@ -88,7 +88,7 @@ module.exports.objectForEach = function(obj, callback) {}
  * 
  * @returns {String} String reversed.
  */
-module.exports.reverseString = function(str) {}
+module.exports.reverseString = function (str) {}
 
 
 /**
@@ -106,7 +106,7 @@ module.exports.reverseString = function(str) {}
  * 
  * @returns {Boolean} Return true if is a palindrome.
  */
-module.exports.isPalindrome = function(str) {}
+module.exports.isPalindrome = function (str) {}
 
 
 /**
@@ -125,7 +125,7 @@ module.exports.isPalindrome = function(str) {}
  * 
  * @returns {Boolean} If `a` is multiple of `b` returns true
  */
-module.exports.isMultipleOf = function(a, b) {}
+module.exports.isMultipleOf = function (a, b) {}
 
 
 /**
@@ -143,7 +143,7 @@ module.exports.isMultipleOf = function(a, b) {}
  * 
  * @returns {String} Returns the longest word of `str`
  */
-module.exports.longestWord = function(str) {}
+module.exports.longestWord = function (str) {}
 
 
 /**
@@ -161,7 +161,7 @@ module.exports.longestWord = function(str) {}
  * 
  * @returns {String} Returns a capitalized string
  */
-module.exports.capitalize = function(str) {}
+module.exports.capitalize = function (str) {}
 
 
 
@@ -180,7 +180,7 @@ module.exports.capitalize = function(str) {}
  * 
  * @returns {Number} Returns number of vowels in `str`
  */
-module.exports.vowelCount = function(str) {}
+module.exports.vowelCount = function (str) {}
 
 
 
@@ -199,7 +199,7 @@ module.exports.vowelCount = function(str) {}
  * 
  * @returns {Number} Returns character most used in the string.
  */
-module.exports.maxChar = function(str) {}
+module.exports.maxChar = function (str) {}
 
 
 /**
@@ -219,7 +219,11 @@ module.exports.maxChar = function(str) {}
  * 
  * @returns {Array} Returns an array of numbers
  */
-module.exports.fizzBuzz = function({n1 = 3, n2 = 5, max = 100} = {}) {}
+module.exports.fizzBuzz = function ({
+	n1 = 3,
+	n2 = 5,
+	max = 100
+} = {}) {}
 
 
 /**
@@ -237,7 +241,7 @@ module.exports.fizzBuzz = function({n1 = 3, n2 = 5, max = 100} = {}) {}
  * 
  * @returns {Number} Returns sum of all numbers from 0 to `counter`
  */
-module.exports.simpleAdding = function(num) {}
+module.exports.simpleAdding = function (num) {}
 
 
 /**
@@ -260,7 +264,7 @@ module.exports.arrayToTree = function (...paths) {}
 
 
 /**
- * CHALLENGE 14: ARRAY TO TREE
+ * CHALLENGE 15: ALPHABETICALLY SORT
  * @name alphabeticallySort
  * @description Write a function that can be used into an Array.sort() for sorting items alphabetically.
  * @author Nachiketha <nachikethashu@gmail.com>
@@ -276,4 +280,4 @@ module.exports.arrayToTree = function (...paths) {}
  * 
  * @returns {Boolean}
  */
-module.exports.alphabeticallySort = function(a, b) {}
+module.exports.alphabeticallySort = function (a, b) {}
