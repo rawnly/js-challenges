@@ -1,6 +1,6 @@
 {
  "name": "js-challenges",
- "version": "0.0.2",
+ "version": "0.0.3",
  "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
  "main": "src/challenges.js",
  "license": "MIT",
