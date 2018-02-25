@@ -50,7 +50,8 @@ All challenges need to follow this scheme:
     */
     module.exports.challenge_name = function() {}
 ```
-> If your challenge is taken from forums please link the thread or the stackoverflow question with `@see`
+If your challenge is taken from forums please link the thread or the stackoverflow question with `@see`
+> READ MORE ABOUT **JSODC** [here](http://usejsdoc.org/)
 
 ## Related
 - [Javascript30][js30] - 30 Day Vanilla JS Challenge
