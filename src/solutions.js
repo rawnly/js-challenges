@@ -1,6 +1,6 @@
 // CHALLENGE 1: ROUND NUMBER
 // DESCRIPTION: Write a function that round a number to given decimal places.
-// Ex: round(Math.PI, 2) => 3.14
+// Ex: round(Math.PI, 2) => 3.14 (By default it will return 0 decimal places, round(Math.PI, 2) => 3)
 module.exports.round = function(n, places = 0) {
 	places = Math.pow(10, places)
 
