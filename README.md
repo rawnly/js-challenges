@@ -34,13 +34,23 @@ All challenges need to follow this scheme:
 > (2 spaces between each challenge)
 
 ```js
-    // CHALLENGE <n>: <challenge-title>
-    // DESCRIPTION: <challenge-description>
-    // EX: <example-output>
+    /** 
+     * CHALLEBGE <n>: <CHALLENGE-NAME>
+     * @name <functionName>
+     * @description <challenge-description>
+     * @author <Your Name> <you[at]domain.com>
+     * 
+     * @example Usage:
+     * functionName(args) //=> output
+     * 
+     * @param {Type} a ...
+     * @param {Type} b ...
+     * 
+     * @returns {Type} ... 
+    */
     module.exports.challenge_name = function() {}
-
-
 ```
+> If your challenge is taken from forums please link the thread or the stackoverflow question with `@see`
 
 ## Related
 - [Javascript30][js30] - 30 Day Vanilla JS Challenge
