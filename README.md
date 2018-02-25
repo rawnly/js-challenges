@@ -1,6 +1,9 @@
 # Javascript Challenges
 > Some javascript challenges from beginner to advanced.
 
+## What?
+A collection of Javascript coding challenges, from beginner to advanced. All challenges are taken from the generous web or created by the contributors.
+
 ## So, Why?
 I'm creating this repo because I want to bring as many as possible code challenges (for free obviously) in a file or more. I know that there are so many websites like [codewars](codewars.com/) or [coderbyte](https://coderbyte.com) but this is different. So many websites are not for free, you need to pay a subscription and I think this is right ok, but if we can why don't do that for free? 
 
