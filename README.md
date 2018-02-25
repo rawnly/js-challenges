@@ -40,8 +40,10 @@ All challenges need to follow this scheme:
      * @description <challenge-description>
      * @author <Your Name> <you[at]domain.com>
      * 
+     * 
      * @example Usage:
      * functionName(args) //=> output
+     * 
      * 
      * @param {Type} a ...
      * @param {Type} b ...
