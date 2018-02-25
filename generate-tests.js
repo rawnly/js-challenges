@@ -19,9 +19,9 @@ const solutions = require('../src/solutions')
 
 test('${testName}', t => {
 	var argument = 'hello';
-	var output = ${funcname}(this, argument);
+	var output = ${funcname}(argument);
 
-	return t.deepEqual(output, solutions.${funcname}(this, argument));
+	return t.deepEqual(output, solutions.${funcname}(argument));
 })`
 
 	var testPath = path.join(__dirname, 'tests', `_${funcname}.js`);
@@ -31,9 +31,11 @@ test('${testName}', t => {
 	}
 }
 
-requirements = requirements.map(req => {
-	return `require('./tests/_${req}');`
-})
+requirements = requirements
+	.sort((a, b) => a.localeCompare(b))
+	.map(req => {
+		return `require('./tests/_${req}');`
+	})
 
 fs.unlinkSync(path.join(__dirname, 'test.js'));
 fs.writeFileSync(path.join(__dirname, 'test.js'), requirements.join('\n'));
