@@ -267,7 +267,7 @@ module.exports.arrayToTree = function (...paths) {}
  * CHALLENGE 15: ALPHABETICALLY SORT
  * @name alphabeticallySort
  * @description Write a function that can be used into an Array.sort() for sorting items alphabetically.
- * @author Nachiketha <nachikethashu@gmail.com>
+ * @author Nachiketha <nachikethashu[at]gmail.com>
  * 
  * @see https://stackoverflow.com/questions/6712034/sort-array-by-firstname-alphabetically-in-javascript
  * 
@@ -281,3 +281,19 @@ module.exports.arrayToTree = function (...paths) {}
  * @returns {Boolean}
  */
 module.exports.alphabeticallySort = function (a, b) {}
+
+
+/**
+* CHALLENGE 16: FIRST RECURRING CHARACTER
+* @name firstRecurringCharacter
+* @description Write a function that returns the first recurring character in a string or null if no recursion.
+* @author Federico Vitale <fedevitale99[at]gmail.com>
+*
+* @example Usage:
+* firstRecurringChar('federico') // => 'e'
+*
+* @param {String} str String to analyze
+*
+* @returns {String} or {Null}
+*/
+module.exports.firstRecurringChar = function(str) {}

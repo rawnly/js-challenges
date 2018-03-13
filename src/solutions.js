@@ -133,7 +133,7 @@ module.exports.isPalindrome = function (str) {
  * 
  * 
  * @example Usage:
- * isMultipleOf(3, 15) //=> true
+ * isMultipleOf(15, 3) //=> true
  * 
  * 
  * @param {Number} a Number to be checked for multiple of `b`
@@ -228,12 +228,12 @@ module.exports.vowelCount = function (str) {
  * 
  * 
  * @example Usage:
- * maxChar('hello') //=> l
+ * maxChar('hello') //=> { count: 2, char: 'l' }
  * 
  * 
  * @param {String} str The string to be checked 
  * 
- * @returns {Number} Returns character most used in the string.
+ * @returns {Object} Returns character most used in the string.
  */
 module.exports.maxChar = function (str) {
 	let charMap = {};
@@ -402,4 +402,32 @@ module.exports.arrayToTree = function (...paths) {
  */
 module.exports.alphabeticallySort = function (a, b) {
 	return a.localeCompare(b)
+}
+
+
+/**
+* CHALLENGE 16: FIRST RECURRING CHARACTER
+* @name firstRecurringCharacter
+* @description Write a function that returns the first recurring character in a string or null if no recursion.
+* @author Federico Vitale <fedevitale99[at]gmail.com>
+*
+* @example Usage:
+* firstRecurringChar('federico') // => 'e'
+*
+* @param {String} str String to analyze
+*
+* @returns {String} or {Null}
+*/
+module.exports.firstRecurringChar = function(str) {
+	var charCount = {};
+
+	for (let i in str) {
+		var char = str[i];
+	
+		if ( char in charCount ) return
+
+		charCount[char] = 1;
+	}
+
+	return null;
 }
