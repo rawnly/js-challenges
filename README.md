@@ -12,7 +12,7 @@
   3. [Sum content of an array](#sum-content-of-an-array)
   4. [Object `forEach`](#object-foreach)
   5. [String reverse](#string-reverse)
-  6. [More Challenges](docs/challenges.md)
+  6. [More Challenges](docs/CHALLENGES.md)
 <!--   6. [Check palindrome](#6-check-palindrome)
   7. [Check if is multiple](#7-is-multiple)
   8. [Get the longest word](#8-get-the-longest-word)
@@ -36,7 +36,7 @@ A collection of Javascript coding challenges, from beginner to advanced. All cha
 I'm creating this repo because I want to bring as many as possible code challenges (for free obviously) in a file or more. I know that there are so many websites like [codewars](https://codewars.com/) or [coderbyte](https://coderbyte.com) but this is different. So many websites are not for free, you need to pay a subscription.
 
 ## Challenges
-Below a few challenges, you can get the full documentation [here](docs/challenges.md).
+Below a few challenges, you can get the full documentation [here](docs/CHALLENGES.md).
 
 If you have an idea on how to improve this repo don't be shine, post a **PR** o open a new **ISSUE**!
 
