@@ -1,7 +1,11 @@
-# Javascript Challenges
-> Some javascript challenges from beginner to advanced.
+<!-- # Javascript Challenges -->
+<p align="center">
+<img src="docs/assets/js_logo.png" height="30px">
+<br><br>
+Some javascript challenges from beginner to advanced.
+</p>
+<br><br>
 
-![logo](docs/assets/logo.png)
 
 ### Index
 - [What](#what)
