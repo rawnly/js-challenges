@@ -1,6 +1,8 @@
 # Javascript Challenges
 > Some javascript challenges from beginner to advanced.
 
+![logo](docs/assets/logo.png)
+
 ## What?
 A collection of Javascript coding challenges, from beginner to advanced. All challenges are taken from the generous web or created by the contributors.
 
