@@ -3,6 +3,7 @@
 	</br>
 	</br>
 	</br>
+	</br>
 	<img alt="logo" src="docs/assets/js_logo.png" height="30px">
 	</br>
 	</br>
