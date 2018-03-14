@@ -54,7 +54,7 @@ Below all the available challenges and some relative examples.
 		isPalindrome('racecar') //=> true
 	```
 
-- #### 7. IS MULTIPLE OF
+- #### 7. IS MULTIPLE
 	- **NAME**: `isMultipleOf`
 	- **DESCRIPTION**: Write a function that checks if a number is multiple of another number.
 	```js
