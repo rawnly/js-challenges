@@ -291,11 +291,11 @@ module.exports.fizzBuzz = function ({
 		let char = '';
 
 		if (i % n1 === 0) {
-			char += 'Foo';
+			char += 'Fizz';
 		}
 
 		if (i % n2 === 0) {
-			char += 'Bar';
+			char += 'Buzz';
 		}
 
 		numbers.push(char || i);
@@ -424,7 +424,7 @@ module.exports.firstRecurringChar = function(str) {
 	for (let i in str) {
 		var char = str[i];
 	
-		if ( char in charCount ) return
+		if ( char in charCount ) return char;
 
 		charCount[char] = 1;
 	}
