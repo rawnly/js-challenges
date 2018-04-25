@@ -1,12 +1,19 @@
 <!-- # Javascript Challenges -->
 <p align="center">
-<br><br><br><br>
-<img alt="logo" src="docs/assets/js_logo.png" height="30px">
-<br><br>
-Some javascript challenges from beginner to advanced.
+=======
+	</br>
+	</br>
+	</br>
+	</br>
+	<img alt="logo" src="docs/assets/js_logo.png" height="30px">
+	</br>
+	</br>
+	Some javascript challenges from beginner to advanced.
+>>>>>>> e3de96dbb3135cbbbb63d00499889fc3593bbe95
 </p>
-<br><br>
-
+</br>
+</br>
+</br>
 
 ### Index
 - [What](#what)
