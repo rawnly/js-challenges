@@ -2,7 +2,7 @@ const test = require('ava');
 const {firstRecurringChar} = require('..');
 const solutions = require('../src/solutions')
 
-test('FIRST R,CECURRING', t => {
+test('FIRST RECURRING', t => {
 	var argument = 'level';
 	var output = firstRecurringChar(argument);
 
