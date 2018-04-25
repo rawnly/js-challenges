@@ -1,6 +1,6 @@
 <!-- # Javascript Challenges -->
 <p align="center">
-<br><br><br>
+<br><br><br><br>
 <img alt="logo" src="docs/assets/js_logo.png" height="30px">
 <br><br>
 Some javascript challenges from beginner to advanced.

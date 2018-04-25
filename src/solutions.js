@@ -1,3 +1,5 @@
+const typeCheck = require('./typeCheck');
+
 /**
  * CHALLENGE 1: ROUND NUMBER
  * @name round
@@ -15,6 +17,14 @@
  * @returns {Number} Rounded number
  */
 module.exports.round = function (n, places = 0) {
+	typeCheck({
+		param: n,
+		type: 'number'
+	}, {
+		param: places,
+		type: 'number'
+	})
+
 	places = Math.pow(10, places)
 
 	return Math.floor(n * places) / places;
@@ -37,7 +47,22 @@ module.exports.round = function (n, places = 0) {
  * @returns {Array} Returns the merge of all arrays
  */
 module.exports.arrayMerge = function (...arr) {
-	return arr.reduce((a, b) => [...a, ...b]);
+	typeCheck({
+		param: arr,
+		type: 'array'
+	})
+
+	return arr.reduce((a, b) => {
+		typeCheck({
+			param: a,
+			type: 'array'
+		}, {
+			param: b,
+			type: 'array'
+		})
+
+		return [...a, ...b]
+	});
 }
 
 
@@ -58,7 +83,22 @@ module.exports.arrayMerge = function (...arr) {
  * @return {Number} The sum of all items in the array
  */
 module.exports.arraySum = function (arr) {
-	return arr.reduce((a, b) => a + b);
+	typeCheck({
+		param: arr,
+		type: 'array'
+	})
+
+	return arr.reduce((a, b) => {
+		typeCheck({
+			param: a,
+			type: 'number'
+		}, {
+			param: b,
+			type: 'number'
+		})
+		
+		return a+b;
+	});
 }
 
 
@@ -121,6 +161,7 @@ module.exports.reverseString = function (str) {
  * @returns {Boolean} Return true if is a palindrome.
  */
 module.exports.isPalindrome = function (str) {
+
 	return str.split('').reverse().join('') === str;
 }
 
@@ -142,6 +183,7 @@ module.exports.isPalindrome = function (str) {
  * @returns {Boolean} If `a` is multiple of `b` returns true
  */
 module.exports.isMultipleOf = function (a, b) {
+
 	return a % b === 0;
 }
 
@@ -162,6 +204,7 @@ module.exports.isMultipleOf = function (a, b) {
  * @returns {String} Returns the longest word of `str`
  */
 module.exports.longestWord = function (str) {
+
 	var words = str.trim().replace(/\W/g, ' ').trim().split(/\s+/);
 
 	words = words.sort((a, b) => {
@@ -188,7 +231,9 @@ module.exports.longestWord = function (str) {
  * @returns {String} Returns a capitalized string
  */
 module.exports.capitalize = function (str) {
+
 	var words = str.trim().split(/\s+/g)
+
 	return words.map(word => {
 		return word[0].toUpperCase() + word.substr(1, word.length)
 	}).join(' ');
@@ -213,6 +258,8 @@ module.exports.capitalize = function (str) {
  */
 module.exports.vowelCount = function (str) {
 	let isVowel = /[aAeEiIoOuU]/g
+
+
 	return str.split('').filter(letter => {
 		return isVowel.test(letter)
 	}).length
@@ -239,6 +286,8 @@ module.exports.maxChar = function (str) {
 	let charMap = {};
 	let charCount = 0;
 	let charMostUsed = '';
+
+
 
 	for (var i = 0; i < str.split('').length; i++) {
 		var letter = str.split('')[i];
@@ -322,6 +371,7 @@ module.exports.fizzBuzz = function ({
  */
 module.exports.simpleAdding = function (num) {
 	var numbers = [];
+
 
 	num = Math.abs(num)
 
@@ -421,11 +471,14 @@ module.exports.alphabeticallySort = function (a, b) {
 module.exports.firstRecurringChar = function(str) {
 	var charCount = {};
 
+	// Let's removem all spaces
+	str = str.replace(/\s+/g, '');
+
 	for (let i in str) {
 		var char = str[i];
 	
-		if ( char in charCount ) return
 
+		if ( char in charCount ) return
 		charCount[char] = 1;
 	}
 
