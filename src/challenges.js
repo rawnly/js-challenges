@@ -297,3 +297,19 @@ module.exports.alphabeticallySort = function (a, b) {}
 * @returns {String} or {Null}
 */
 module.exports.firstRecurringChar = function(str) {}
+
+
+/**
+* CHALLENGE 17: OBJECT MERGE
+* @name objectMerge
+* @description Write a function that returns an object that includes all given objects.
+* @author Federico Vitale <fedevitale99[at]gmail.com>
+*
+* @example Usage:
+* objectMerge({ a: 'b' }, { c: 'd' }) // => { a: 'b', c: 'd' }
+*
+* @param {Array} objects - An array of objects
+*
+* @returns {Object}
+*/
+module.exports.objectMerge = function(...objects) {}

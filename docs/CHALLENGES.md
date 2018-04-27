@@ -138,3 +138,19 @@ Below all the available challenges and some relative examples.
 	```js
 		firstRecurringChar('abacyb') //=> 'a'
 	```
+
+- #### 17. OBJECT MERGE
+	- **NAME**: `objectMerge`
+	- **DESCRIPTION**: Write a function that returns an object that includes all given objects.
+
+	```js
+		/* Example usage */
+		const user = [
+			{ first: 'john' },
+			{ last:  'doe' }
+		];
+
+		objectMerge({ first: 'john' }, { last: 'doe' });
+		/* OR */
+		objectMerge(user);
+	```

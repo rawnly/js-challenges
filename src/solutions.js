@@ -469,6 +469,7 @@ module.exports.alphabeticallySort = function (a, b) {
 * @returns {String} or {Null}
 */
 module.exports.firstRecurringChar = function(str) {
+	typeCheck({ param: str, type: 'string' })
 	var charCount = {};
 
 	// Let's removem all spaces
@@ -477,14 +478,41 @@ module.exports.firstRecurringChar = function(str) {
 	for (let i in str) {
 		var char = str[i];
 	
-<<<<<<< HEAD
-=======
-		if ( char in charCount ) return char;
->>>>>>> e3de96dbb3135cbbbb63d00499889fc3593bbe95
-
 		if ( char in charCount ) return
 		charCount[char] = 1;
 	}
 
 	return null;
+}
+
+
+/**
+* CHALLENGE 17: OBJECT MERGE
+* @name objectMerge
+* @description Write a function that returns an object that includes all given objects.
+* @author Federico Vitale <fedevitale99[at]gmail.com>
+*
+* @example Usage:
+* objectMerge({ a: 'b' }, { c: 'd' }) // => { a: 'b', c: 'd' }
+*
+* @param {Array} objects - An array of objects
+*
+* @returns {Object}
+*/
+module.exports.objectMerge = function(...objects) {
+	if ( Array.isArray(objects[0]) ) {
+		objects = objects[0]
+	}
+
+	return objects.reduce((a, b) => {
+		typeCheck({
+			param: a,
+			type: 'object'
+		}, {
+			param: b,
+			type: 'object'
+		})
+
+		return Object.assign(a, b);
+	})
 }
