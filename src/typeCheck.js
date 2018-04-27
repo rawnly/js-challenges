@@ -7,27 +7,46 @@
  * @return null
  */
 module.exports = function (...args) {
-	args.map(({
+	let defaultOptions = {
+		throwError: true
+	};
+
+	if (Array.isArray(args[0])) {
+		defaultOptions = Object.assign(defaultOptions, args[1]);
+		args = args[0];
+	}
+
+	return args.filter(({
 		param,
 		type
 	}) => {
 		var expected = type;
 		var varType = Array.isArray(param) ? 'array' : typeof param;
 
+		if (/\|/g.test(expected)) {
+			expected = expected.split('|');
+		}
+
 		if (Array.isArray(expected)) {
 			if (expected.indexOf(varType) < 0) {
-				throw new SyntaxError(`Expected ${expected.join( expected.length > 1 ? ' or ' : '')} saw ${varType}`);
+				if (defaultOptions.throwError === true) {
+					throw new SyntaxError(`Expected ${expected.join( expected.length > 1 ? ' or ' : '')} saw ${varType}`);
+				}
+
+				return false;
 			}
 
-			return;
+			return true;
 		} else {
 			if (expected !== varType) {
-				throw new SyntaxError(`Expected ${expected} saw ${varType}`)
+				if (defaultOptions.throwError === true) {
+					throw new SyntaxError(`Expected ${expected} saw ${varType}`)
+				}
+
+				return false;
 			}
 
-			return;
+			return true;
 		}
-	})
-
-	return;
+	}).length > 0
 }
