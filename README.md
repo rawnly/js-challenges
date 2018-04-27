@@ -1,4 +1,3 @@
-<!-- # Javascript Challenges -->
 <p align="center">
 =======
 	</br>
@@ -9,7 +8,6 @@
 	</br>
 	</br>
 	Some javascript challenges from beginner to advanced.
->>>>>>> e3de96dbb3135cbbbb63d00499889fc3593bbe95
 </p>
 </br>
 </br>
@@ -25,24 +23,13 @@
   4. [Object `forEach`](#object-foreach)
   5. [String reverse](#string-reverse)
   6. [More Challenges](docs/CHALLENGES.md)
-<!--   6. [Check palindrome](#6-check-palindrome)
-  7. [Check if is multiple](#7-is-multiple)
-  8. [Get the longest word](#8-get-the-longest-word)
-  9. [Capitalize a string](#9-capitallize)
-  10. [Vowel count](#10-vowel-count)
-  11. [Max char](#11-max-char)
-  12. [fizzBuzz Game](#12-fizz-buzz)
-  13. [Simple Adding](#13-simple-adding)
-  14. [Array to tree](#14-array-to-tree)
-  15. [Alphabetically sort](#15-alphabetically-sort)
-  16. [First recurring character](#16-first-recurring-character) -->
-- [Participating](#partecipating)
+- [Partecipating](#partecipating)
 - [Contributing](#contributing)
   - [Notes](#contributing-notes)
 - [Related Repos](#related)
 
 ## What?
-A collection of Javascript coding challenges, from beginner to advanced. All challenges are taken from the generous web or created by the contributors.
+A collection of Javascript coding challenges, from beginner to advanced. All challenges are taken from the generous web or created by some awesome [contributors][contributors].
 
 ## So, Why?
 I'm creating this repo because I want to bring as many as possible code challenges (for free obviously) in a file or more. I know that there are so many websites like [codewars](https://codewars.com/) or [coderbyte](https://coderbyte.com) but this is different. So many websites are not for free, you need to pay a subscription.
@@ -103,7 +90,8 @@ If you have an idea on how to improve this repo don't be shine, post a **PR** o 
 2. Install all dependencies via `npm install`.
 3. Fill all challenges in [`./src/challenges.js`][srcChallenges].
 4. Test them via `npm run test`.
-5. Some ideas? Submit a **PR** or open an **ISSUE**!
+5. Share the challenge on twitter via `#jschallenges`
+6. Some ideas? Read below the [contributing](#contributing) paragraph or open an **ISSUE**!
 
 ## Contributing
 1. Clone this repo.
@@ -140,7 +128,7 @@ All challenges need to follow this scheme:
     module.exports.challenge_name = function() {}
 ```
 If your challenge is taken from forums please link the thread or the stackoverflow question with `@see`
-> READ MORE ABOUT **JSODC** [here](http://usejsdoc.org/)
+##### READ MORE ABOUT **JSODC** [here](http://usejsdoc.org/)
 
 ## Related
 - [Javascript30][js30] - 30 Day Vanilla JS Challenge
@@ -148,7 +136,7 @@ If your challenge is taken from forums please link the thread or the stackoverfl
 
 --------
 <p align="center">
-    <a href="https://twitter.com/rawnlydev">Twitter</a> • <a href="https://instagram.com/fede.vitale">Instagram</a>  • <a href="https://github.com/rawnly">GitHub</a>
+  <a href="https://twitter.com/rawnlydev">Twitter</a> • <a href="https://instagram.com/fede.vitale">Instagram</a>  • <a href="https://github.com/rawnly">GitHub</a>
 </p>
 
 
@@ -157,3 +145,4 @@ If your challenge is taken from forums please link the thread or the stackoverfl
 [challenges]: docs/CHALLENGES.md
 [srcChallenges]: src/challenges.js
 [srcSolutions]: src/solutions.js
+[contributors]: /graphs/contributors
