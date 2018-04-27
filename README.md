@@ -144,4 +144,4 @@ If your challenge is taken from forums please link the thread or the stackoverfl
 [challenges]: docs/CHALLENGES.md
 [srcChallenges]: src/challenges.js
 [srcSolutions]: src/solutions.js
-[contributors]: /graphs/contributors
+[contributors]: https://github.com/Rawnly/js-challenges/graphs/contributors
