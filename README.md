@@ -37,7 +37,7 @@ I'm creating this repo because I want to compile as many coding challenges (for 
 ## Challenges
 Below are a few challenges - you can get the full documentation [here](docs/CHALLENGES.md).
 
-If you have an idea on how to improve this repo don't be shy, post a **PR** o open a new **ISSUE**!
+If you have an idea on how to improve this repo don't be shy, post a **PR** or open a new **ISSUE**!
 
 1. #### ROUND NUMBER
 	- **NAME**: `round`
