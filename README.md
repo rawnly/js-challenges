@@ -6,7 +6,7 @@
 	<img alt="logo" src="docs/assets/js_logo.png" height="30px">
 	</br>
 	</br>
-	Some javascript challenges from beginner to advanced.
+	Some javascript challenges from beginner to advanced difficulty.
 </p>
 </br>
 </br>
@@ -32,16 +32,16 @@
 A collection of Javascript coding challenges, from beginner to advanced. All challenges are taken from the generous web or created by some awesome [contributors][contributors].
 
 ## So, Why?
-I'm creating this repo because I want to bring as many as possible code challenges (for free obviously) in a file or more. I know that there are so many websites like [codewars](https://codewars.com/) or [coderbyte](https://coderbyte.com) but this is different. So many websites are not for free, you need to pay a subscription.
+I'm creating this repo because I want to compile as many coding challenges (for free obviously) in one file. I know that there are many websites like [codewars](https://codewars.com/) or [coderbyte](https://coderbyte.com) but this is different. These websites may not be free and you may need to pay a subscription.
 
 ## Challenges
-Below a few challenges, you can get the full documentation [here](docs/CHALLENGES.md).
+Below are a few challenges - you can get the full documentation [here](docs/CHALLENGES.md).
 
-If you have an idea on how to improve this repo don't be shine, post a **PR** o open a new **ISSUE**!
+If you have an idea on how to improve this repo don't be shy, post a **PR** o open a new **ISSUE**!
 
 1. #### ROUND NUMBER
 	- **NAME**: `round`
-	- **DESCRIPTION**: Write a function that round a number to given decimal places.
+	- **DESCRIPTION**: Write a function that rounds a number to given amount of decimal places.
 	```js 
 		round(Math.PI, 2); // => 3.14 
 	```
@@ -79,7 +79,7 @@ If you have an idea on how to improve this repo don't be shine, post a **PR** o 
 
 5. #### STRING REVERSE
 	- **NAME**: `reverseString`
-	- **DESCRIPTION**: Write a function that reverse a string.
+	- **DESCRIPTION**: Write a function that reverses a string.
 	```js 
 		reverseString('hello world!') //=> '!dlrow olleh'
 	```
